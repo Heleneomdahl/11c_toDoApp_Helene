@@ -10,7 +10,7 @@ function subMitToDo() {
   const uniqueId = self.crypto.randomUUID(); // unikt id
   li.dataset.id = uniqueId;
 
-  // Tilføj checkbox, tekst og slet-knap
+  // Tilføjelse af checkbox, tekst og slet-knap
   li.innerHTML = `<input type="checkbox"><h3>${toDoNameInput.value}</h3><button class="delete_btn">×</button>`;
 
   toDoContainer.appendChild(li);
